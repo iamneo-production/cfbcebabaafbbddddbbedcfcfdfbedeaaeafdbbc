@@ -1,3 +1,3 @@
-export default Button(){
-    return <Button
+export default function Button(){
+    return <button>Button Works</button>
 }
