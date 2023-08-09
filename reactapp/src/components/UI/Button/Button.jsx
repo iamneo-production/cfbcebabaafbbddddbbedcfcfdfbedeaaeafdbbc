@@ -1,19 +1,6 @@
-import React from 'react'
-
-
-const ButtonFunc = (text) => {
-    if (text === "") {
-        return "Button Works";
-    } else {
-        return text;
+const Button = (props) => {
+    const { btnName = props.children,onClick,marked,style } =props;return (
+    <button onClick={onClick} disabled={marked} className={style}>{btnName }</button>
+    )
     }
-}
-
-
-
-
-const Button = (ButtonProps) => {
-    return (<button onClick={ButtonProps.onClick}>{ButtonProps.children}</button>);
-}
-
-export default Button;
+    export default Button;
